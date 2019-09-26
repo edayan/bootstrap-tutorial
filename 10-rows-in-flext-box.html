@@ -13,9 +13,9 @@
     <title>Bootstrap tutorial</title>
 
     <style>
-        .col {
-            /* vh-% of view port */
-            min-height: 70vh;
+        .row {
+            background: #f15025;
+            min-height: 100vh;
         }
     </style>
 </head>
@@ -27,6 +27,15 @@
     <!-- justify-content: horizontal alignment -->
     <!-- align-items vertical alignment -->
     <!-- only the direct children -->
+    <!-- row is by default flex box container; so dont need to write 'd-flex' in 'row' -->
+    <div class="container">
+        <div class="row justify-content-center align-items-center">
+            <div class="col-9">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt hic at molestiae blanditiis
+                    perferendis accusamus numquam architecto suscipit pariatur nostrum?</p>
+            </div>
+        </div>
+    </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
