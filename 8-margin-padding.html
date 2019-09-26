@@ -13,31 +13,88 @@
     <title>Bootstrap tutorial</title>
 
     <style>
-        .container {
+        /* .container {
             margin: 20px;
             padding: 20px;
         }
         .bg-danger {
             margin: 20px;
             padding: 20px;
-        }
+        } */
     </style>
 </head>
 
 <body>
 
     <!--margin padding -->
-
+    <!-- 1 rem =16px -->
+    <!-- m p 0-5 auto -->
     <div class="container">
-        <div class="bg-danger">I'm a div</div>
-        <div class="bg-info">I'm a div</div>
-        <div class="bg-warning">I'm a div</div>
-        <div class="bg-success">I'm a div</div>
-        <div class="bg-primary">I'm a div</div>
-        <div class="bg-secondary">I'm a div</div>
+        <div class="bg-danger m-5">I'm a div</div>
+        <div class="bg-info m-4">I'm a div</div>
+        <div class="bg-warning m-3">I'm a div</div>
+        <div class="bg-success m-2">I'm a div</div>
+        <div class="bg-primary m-1">I'm a div</div>
+        <div class="bg-secondary m-0">I'm a div</div>
     </div>
 
+    <div class="container">
+        <div class="bg-danger p-5">I'm a div</div>
+        <div class="bg-info p-4">I'm a div</div>
+        <div class="bg-warning p-3">I'm a div</div>
+        <div class="bg-success p-2">I'm a div</div>
+        <div class="bg-primary p-1">I'm a div</div>
+        <div class="bg-secondary p-0">I'm a div</div>
+    </div>
 
+    <!-- mr-margin right
+    mt-margin top
+    ml-margin left
+    my- vertical axis margin-top+margin-bottom
+    mx- horizontal axis margin-left+margin-right-->
+    <div class="container">
+        <div class="bg-danger mt-5">I'm a mt-5</div>
+        <div class="bg-info mb-5">I'm a mb-5</div>
+        <div class="bg-warning ml-5">I'm a ml-5</div>
+        <div class="bg-success mr-5">I'm a mr-5</div>
+        <div class="bg-primary my-5">I'm a my-5</div>
+        <div class="bg-secondary mx-5">I'm a mx-5</div>
+    </div>
+
+    <!-- pr-padding right
+    pt-padding top
+    pl-padding left
+    py- vertical axis padding-top+padding-bottom
+    px- horizontal axis padding-left+padding-right-->
+    <div class="container">
+        <div class="bg-danger    pt-5">I'm a pt-5</div>
+        <div class="bg-info      pb-5">I'm a pb-5</div>
+        <div class="bg-warning   pl-5">I'm a pl-5</div>
+        <div class="bg-success   pr-5">I'm a pr-5</div>
+        <div class="bg-primary   py-5">I'm a py-5</div>
+        <div class="bg-secondary px-5">I'm a px-5</div>
+    </div>
+
+    <!-- w-width in %
+    mx-auto:- to center -->
+    <div class="container">
+        <div class="bg-danger   w-25  mx-auto">I'm a width</div>
+        <div class="bg-info     w-50  mx-auto">I'm a width</div>
+        <div class="bg-warning  w-75 mx-auto">I'm a width</div>
+        <div class="bg-success  w-100 mx-auto">I'm a width</div>
+        <div class="bg-primary  mx-auto">I'm a width</div>
+        <div class="bg-secondary mx-auto">I'm a width</div>
+    </div>
+
+    <h5>Margin depends on screen size</h5>
+    <div class="container">
+        <div class="bg-danger m-md-5">margin from medium </div>
+        <div class="bg-info mb-lg-4">margin bottom from large</div>
+        <div class="bg-warning m-3">I'm a div</div>
+        <div class="bg-success m-2">I'm a div</div>
+        <div class="bg-primary m-1">I'm a div</div>
+        <div class="bg-secondary m-0">I'm a div</div>
+    </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
